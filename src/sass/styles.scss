@@ -1,0 +1,25 @@
+@import "variables";
+
+/* Layout */
+@import "base";
+@import "breakpoints";
+@import "grid";
+
+/* Components */
+@import "components/card";
+@import "components/navbar";
+
+/*  Colors */
+@import "colors";
+
+.container {
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+}
+a {
+  color: $link-color;
+  &:hover {
+    color: lighten($link-color, 20%);
+  }
+}

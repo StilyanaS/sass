@@ -1,0 +1,47 @@
+.card {
+  display: grid;
+  padding: $font;
+  justify-items: center;
+  box-shadow: $box-shadow;
+  margin-bottom: 1rem;
+
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 200px;
+  border-radius: $border-width;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: calc(-1 * $border-width);
+    left: calc(-1 * $border-width);
+    z-index: -1;
+    width: calc(100% + $border-width * 2);
+    height: calc(100% + $border-width * 2);
+    background: $gradient;
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: calc(2 * $border-width);
+    animation: moveGradient 4s alternate infinite;
+  }
+
+  .title {
+    font-size: $font-m;
+  }
+  .description {
+    font-size: $font;
+    text-align: center;
+  }
+  a {
+    text-decoration: underline;
+    line-height: $font-m;
+  }
+}
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}

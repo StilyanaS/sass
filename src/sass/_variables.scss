@@ -1,0 +1,30 @@
+$bg-color: #fcf8e8;
+$light: #cee5d0;
+$dark-green: #94b49f;
+$dark-beige: #ecb390;
+$link-color: #ac7088;
+$gradient: linear-gradient(
+  60deg,
+  hsl(224, 85%, 66%),
+  hsl(269, 85%, 66%),
+  hsl(314, 85%, 66%),
+  hsl(359, 85%, 66%),
+  hsl(44, 85%, 66%),
+  hsl(89, 85%, 66%),
+  hsl(134, 85%, 66%),
+  hsl(179, 85%, 66%)
+);
+$colors: (
+  "light-b": $bg-color,
+  "light-gr": $light,
+  "dark-b": $dark-beige,
+  "dark-gr": $dark-green,
+);
+
+$box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+$border-width: 3px;
+
+$font: 1rem;
+$font-m: 1.5rem;
+$font-l: 1.7rem;
+$font-xl: 2rem;
